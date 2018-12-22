@@ -1,96 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
+  <!-- Html Head Tag-->
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="曾枫森的Blog">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="曾枫森的Blog">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://yoursite.com">
+  
+    <link rel="alternate" href="/atom.xml" title="曾枫森的Blog" type="application/atom+xml">
   
   
-  <meta name="description" content="1.使用位运算判断一个数是否是奇数
-注：奇数的二进制的最后一位是1，偶数是0
-
-2.表达式0x13&amp;amp;0x17的值是（ ）
-
-3.若x=2,y=3则x&amp;amp;y的结果是（ ）
-
-4.表达式 -97 | 120 的运算结果是()
-
-5.在位运算中，操作数每右移一位，其结果相当于（ ）  
-
-A">
-  
-
-  
-  
-  
-  
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.使用位运算判断一个数是否是奇数 注：奇数的二进制的最后一位是1，偶数是0  2.表达式0x13&amp;amp;0x17的值是（ ）  3.若x=2,y=3则x&amp;amp;y的结果是（ ）  4.表达式 -97 | 120 的运算结果是()  5.在位运算中，操作数每右移一位，其结果相当于（ ）    A.操作数乘以2     B.操作数除以2   C.操作数除以4     D.操作数乘以4  6.设x">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2018/12/21/day3-作业/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.使用位运算判断一个数是否是奇数 注：奇数的二进制的最后一位是1，偶数是0  2.表达式0x13&amp;amp;0x17的值是（ ）  3.若x=2,y=3则x&amp;amp;y的结果是（ ）  4.表达式 -97 | 120 的运算结果是()  5.在位运算中，操作数每右移一位，其结果相当于（ ）    A.操作数乘以2     B.操作数除以2   C.操作数除以4     D.操作数乘以4  6.设x">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-07T08:45:22.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="1.使用位运算判断一个数是否是奇数 注：奇数的二进制的最后一位是1，偶数是0  2.表达式0x13&amp;amp;0x17的值是（ ）  3.若x=2,y=3则x&amp;amp;y的结果是（ ）  4.表达式 -97 | 120 的运算结果是()  5.在位运算中，操作数每右移一位，其结果相当于（ ）    A.操作数乘以2     B.操作数除以2   C.操作数除以4     D.操作数乘以4  6.设x">
-  
-  
-    <link rel="icon" href="/css/images/favicon.ico">
-  
-  <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon.png">
   
 
-  
-  <!-- baidu webmaster push -->
-  <script src="//push.zhanzhang.baidu.com/push.js"></script>
-</head></html>
-<body class="home blog custom-background custom-font-enabled single-author">
-  <div id="page" class="hfeed site">
-      <header id="masthead" class="site-header" role="banner">
-    <hgroup>
-      <h1 class="site-title">
-        <a href="/" title="Hexo" rel="home">Hexo</a>
-      </h1>
-      
-        <h2 class="site-description hitokoto"></h2>
-        <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js"></script>
-      
-    </hgroup>
+  <!-- Site Title -->
+  <title>曾枫森的Blog</title>
 
-    <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle">菜单</button>
-            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
-            <div class="menu-main-container">
-                <ul id="menu-main" class="nav-menu">
-                
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
-                
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
-                
-                </ul>
-            </div>
-    </nav>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
-      <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-day3-作业" class="post-day3-作业 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By John Doe</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-12-21</span>
+            <span class="time">10:58:06</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
         
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/12/21/day3-作业/" data-id="cjpxhq8lb0000r4u1eut8iazy" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <pre><code>1.使用位运算判断一个数是否是奇数
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <pre><code>1.使用位运算判断一个数是否是奇数
 注：奇数的二进制的最后一位是1，偶数是0
 
 2.表达式0x13&amp;0x17的值是（ ）
@@ -128,95 +146,42 @@ d. n // 10  % 100 // 10
 
 12. 写出判断一个数是否能够被3或者7整除，但是不能同时被3和7整除的表达式
 </code></pre>
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2018/12/21/day3-作业/">
-    <time datetime="2018-12-21T01:55:04.232Z" class="entry-date">
-        2018-12-21
-    </time>
-</a>
-    
-    
-    </footer>
+        </div>
+      </div>
+    </div>
+  </div>
 </article>
 
 
-    
-<nav class="nav-single">
-    <h3 class="assistive-text">文章导航</h3>
-    
-    
-        <span class="nav-next"><a href="/2018/12/19/hello-world/" rel="next">Hello World <span class="meta-nav">→</span></a></span>
-    
-</nav><!-- .nav-single -->
 
-
-
-
-
-
-
-</div></div>
-        <div id="secondary" class="widget-area" role="complementary">
-  
-    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
-    <div>
-        <input type="text" value="" name="s" id="s">
-        <input type="submit" id="searchsubmit" value="搜索">
-    </div>
-</form></aside>
-  
-    
-  
-    
-  
-    
-  <aside class="widget">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget-content">
-      <ul>
-        
-          <li>
-            <a href="/2018/12/21/day3-作业/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/12/19/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </aside>
-
-  
-    
-  
-    
-  
-</div>
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        </p><p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
       </div>
-      <footer id="colophon" role="contentinfo">
-    <p>&copy; 2018 John Doe
-    All rights reserved.</p>
-    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
-</footer>
-    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
-
-<script src="/js/jquery-3.3.1.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-<script src="/js/navigation.js"></script>
-
-<div id="bg"></div>
-
+    </div>
   </div>
-</body>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
 </html>
+
